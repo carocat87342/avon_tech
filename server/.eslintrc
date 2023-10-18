@@ -1,0 +1,52 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    }
+  },
+  "extends": [
+    "airbnb-base",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "endOfLine": "off",
+    "prettier/prettier": 0,
+    "camelcase": 0,
+    "import/no-unresolved": 1,
+    "consistent-return": [
+      "warn",
+      {
+        "treatUndefinedAsUnspecified": false
+      }
+    ],
+    "prefer-destructuring": [
+      "error",
+      {
+        "object": true,
+        "array": false
+      }
+    ]
+  }
+}
